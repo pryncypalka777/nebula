@@ -85,7 +85,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    filter: brightness(85%);
+    filter: brightness(65%);
     user-select: none;
 }
 @media (min-aspect-ratio: 16/9){
@@ -399,6 +399,7 @@ h3{
     cursor: pointer;
     padding: 18px 0;
 }
+
 
 
 
