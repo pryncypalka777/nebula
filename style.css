@@ -172,7 +172,7 @@ nav img{
 
 .video-footer {
     position: absolute;
-    bottom: 20px; /* Odstęp od dołu - reguluj tę wartość */
+    bottom: 10px; /* Odstęp od dołu - reguluj tę wartość */
     left: 0;
     right: 0;
     text-align: center;
@@ -399,6 +399,7 @@ h3{
     cursor: pointer;
     padding: 18px 0;
 }
+
 
 
 
