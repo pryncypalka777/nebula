@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>nebula.</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="loader">
+            <div class="loader-bg-image"></div>
+            <div class="spinner"></div>
+        </div>
+
+
+        
+        <section class="header">
+            <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
+                <source src="assets/banner.mp4" type="video/mp4">
+            </video>
+            
+            <div class="video-footer">
+                <p class="copyright">&copy; 2025 nebulabot.fun</p>
+            </div>
+            
+            <nav>
+                <img class="logoleft" src="assets/logonobg.png">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="https://dc.nebulabot.fun/">DISCORD</a></li>
+                        <li><a href="https://dc.nebulabot.fun/">SUPPORT</a></li>
+                        <li><a href="https://dc.nebulabot.fun/">SHOWCASE</a></li>
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>nebula.</h1>
+                <h6>Professional Trading Bot</h6>
+                <a href="https://dc.nebulabot.fun/" class="hero-btn">get</a>
+                <!-- <h6 class="copyright">&copy; 2025 nebulabot.fun</h6>-->
+            </div>
+
+        </section>
+
+        
+
+
+
+        
+        
+        
+        <script>
+            window.addEventListener("load", function () {
+                const loader = document.getElementById("loader");
+                loader.style.opacity = "0";
+                setTimeout(() => {
+                loader.style.display = "none";
+                }, 1000); // Czas musi pasować do transition (1s = 1000ms)
+              });
+        </script>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const video = document.getElementById("bgVideo");
+            video.playbackRate = 1.75; // ← tutaj zmieniasz prędkość (np. 0.5 dla wolniej)
+        </script>
+
+
+    </body>
+</html>
